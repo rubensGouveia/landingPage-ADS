@@ -1,6 +1,6 @@
 import { AboutStudio } from "@/components/About";
 import { AboutClasses } from "@/components/AboutClasses";
-import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { Testimonials } from "@/components/Testimonials";
 
@@ -11,7 +11,7 @@ export default function Home() {
       <AboutClasses />
       <Testimonials />
       <AboutStudio />
-      <Contact />
+      <Footer />
     </main>
     // <main className="flex min-h-screen flex-col items-center justify-center p-24">
     //   <div className="z-10 w-full max-w-5xl items-center justify-center font-mono text-sm lg:flex ">

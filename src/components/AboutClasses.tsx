@@ -1,12 +1,14 @@
+import React from "react";
+
 export const AboutClasses: React.FC = () => {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-3xl font-bold text-center mb-12">
           Por que escolher nossas aulas VIP?
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 mb-12">
-          {/* Exemplo de um benefício */}
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="text-center">
             <h3 className="text-xl font-semibold">Turmas pequenas</h3>
             <p>
@@ -30,11 +32,20 @@ export const AboutClasses: React.FC = () => {
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold text-center">
-          Por que escolher nossas aulas VIP?
+        <div className="text-center my-10">
+          <button className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition duration-200">
+            Inscreva-se agora e comece a dançar!
+          </button>
+          <p className="mt-4 text-red-600">
+            Vagas limitadas para garantir a qualidade do ensino!
+          </p>
+        </div>
+
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Benefícios das nossas aulas
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <div className="text-center">
             <h3 className="text-xl font-semibold mb-2">Metodologia eficaz</h3>
             <p>
@@ -58,32 +69,95 @@ export const AboutClasses: React.FC = () => {
           </div>
         </div>
 
-        {/* Horários disponíveis */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold text-center mb-6">
-            Horários disponíveis
-          </h3>
-          <div className="flex flex-col items-center">
-            <p>Turma 1: 19h - 20h (Terças e Quintas)</p>
-            <p>Turma 2: 20h - 21h (Terças e Quintas)</p>
-            <p>Turma 3: 21h - 22h (Terças e Quintas)</p>
-          </div>
-        </div>
-
-        {/* Investimento */}
-        <div>
-          <h3 className="text-2xl font-bold text-center mb-6">Investimento</h3>
-          <div className="flex flex-col items-center">
-            <p>Mensal: R$ 200,00</p>
-            <p>Em dupla: R$ 380,00 (R$ 190 por pessoa)</p>
-            <p>Trimestral: R$ 540,00</p>
-          </div>
-        </div>
-
-        <div className="text-center mt-10">
+        <div className="text-center my-10">
           <button className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition duration-200">
-            Quero me matricular agora!
+            Garanta sua vaga antes que acabe!
           </button>
+        </div>
+
+        <h2 className="text-3xl font-bold text-center mb-4">
+          Escolha seu Pacote VIP
+        </h2>
+        <p className="text-center mb-12 max-w-screen-lg mx-auto">
+          Participe de nossas exclusivas aulas de forró, disponíveis às{" "}
+          <strong>terças e quintas</strong>. Oferecemos{" "}
+          <strong>três turmas</strong> com início às{" "}
+          <strong>19h, 20h, e 21h</strong>, cada aula com{" "}
+          <strong>uma hora de duração</strong>. Escolha o pacote que melhor se
+          adapta a você e garanta sua vaga para começar a dançar!
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-10">
+          {/* Pacote Individual */}
+          <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <div className="p-5 flex flex-col h-full">
+              <h5 className="text-lg font-bold tracking-tight text-gray-900 mb-2">
+                Pacote Individual
+              </h5>
+              <p className="font-normal text-gray-700 mb-4">
+                Ideal para quem busca flexibilidade e a experiência completa das
+                aulas em grupo, com atenção dedicada de nossos instrutores.
+              </p>
+              <ul className="text-sm text-gray-600 mb-8 ">
+                <li>Participação em qualquer turma</li>
+                <li>
+                  Investimento: <strong>R$ 200,00/mês</strong>
+                </li>
+              </ul>
+
+              <button className="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+                Escolher Pacote
+              </button>
+            </div>
+          </div>
+
+          {/* Pacote Dupla */}
+          <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <div className="p-5 flex flex-col h-full">
+              <h5 className="text-lg font-bold tracking-tight text-gray-900 mb-2">
+                Pacote Dupla
+              </h5>
+              <p className="font-normal text-gray-700 mb-4">
+                A opção perfeita para casais ou amigos que desejam aprender
+                juntos. Aproveite um desconto especial escolhendo este pacote.
+              </p>
+              <ul className="text-sm text-gray-600 mb-8 h-full">
+                <li>Acesso às turmas com um amigo</li>
+                <li>
+                  Investimento: <strong>R$ 380,00/mês</strong> (R$ 190 por
+                  pessoa)
+                </li>
+              </ul>
+
+              <button className="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 mt-auto ">
+                Escolher Pacote
+              </button>
+            </div>
+          </div>
+
+          {/* Pacote Trimestral */}
+          <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md">
+            <div className="p-5 flex flex-col h-full">
+              <h5 className="text-lg font-bold tracking-tight text-gray-900 mb-2">
+                Pacote Trimestral
+              </h5>
+              <p className="font-normal text-gray-700 mb-4">
+                Para os verdadeiramente comprometidos em aprimorar sua dança.
+                Desfrute de um desconto ainda maior ao se inscrever no pacote
+                trimestral.
+              </p>
+              <ul className="text-sm text-gray-600 mb-8 h-full">
+                <li>Flexibilidade total de turmas</li>
+                <li>
+                  Investimento: <strong>R$ 540,00/trimestre</strong>
+                </li>
+              </ul>
+
+              <button className="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+                Escolher Pacote
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
