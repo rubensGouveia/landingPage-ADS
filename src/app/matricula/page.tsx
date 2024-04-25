@@ -89,10 +89,10 @@ const Matricula: FC = () => {
                   className="mr-2"
                   checked={selectedPlan === plan.id}
                 />
-                <span className="font-bold">
+                <span className="font-bold text-gray-900">
                   {plan.title} - {plan.price}
                 </span>
-                <p className="text-sm mt-2">{plan.description}</p>
+                <p className="text-sm mt-2 text-gray-700">{plan.description}</p>
               </label>
             ))}
           </div>

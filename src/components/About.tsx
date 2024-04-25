@@ -7,10 +7,10 @@ export const AboutStudio: React.FC = () => {
         </h2>
         <p className="mt-4 text-center max-w-screen-lg mx-auto">
           O Acima do Solado, localizado no coração de Tambauzinho e agora também
-          com uma nova unidade sala VIP em Tambaú a partir de maio, é um estúdio
-          de dança e teatro que vai além do convencional. Aqui, a paixão pela
-          arte se funde com a alegria de viver, criando um ambiente acolhedor e
-          estimulante para o aprendizado.
+          com uma nova unidade VIP em Tambaú, é um estúdio de dança e teatro que
+          vai além do convencional. Aqui, a paixão pela arte se funde com a
+          alegria de viver, criando um ambiente acolhedor e estimulante para o
+          aprendizado.
         </p>
         <p className="mt-4 text-center max-w-screen-lg mx-auto">
           Nossa equipe de profissionais altamente capacitados e apaixonados
