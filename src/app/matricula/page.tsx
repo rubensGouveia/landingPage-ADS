@@ -1,12 +1,5 @@
 "use client";
-import {
-  ChangeEvent,
-  useState,
-  FC,
-  useEffect,
-  useLayoutEffect,
-  useCallback,
-} from "react";
+import { ChangeEvent, useState, FC, Suspense, useCallback } from "react";
 
 import Head from "next/head";
 import React from "react";
@@ -134,4 +127,10 @@ const Matricula: FC = () => {
   );
 };
 
-export default Matricula;
+export default function MatriculaPage() {
+  return (
+    <Suspense>
+      <Matricula />
+    </Suspense>
+  );
+}
