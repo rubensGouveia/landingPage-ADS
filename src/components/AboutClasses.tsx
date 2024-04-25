@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 export const AboutClasses: React.FC = () => {
+  const router = useRouter();
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
@@ -33,9 +36,11 @@ export const AboutClasses: React.FC = () => {
         </div>
 
         <div className="text-center my-10">
-          <button className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition duration-200">
-            Inscreva-se agora e comece a dançar!
-          </button>
+          <Link href="/matricula">
+            <button className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition duration-200">
+              Inscreva-se agora e comece a dançar!
+            </button>
+          </Link>
           <p className="mt-4 text-red-600">
             Vagas limitadas para garantir a qualidade do ensino!
           </p>
@@ -70,9 +75,11 @@ export const AboutClasses: React.FC = () => {
         </div>
 
         <div className="text-center my-10">
-          <button className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition duration-200">
-            Garanta sua vaga antes que acabe!
-          </button>
+          <Link href="/matricula">
+            <button className="px-6 py-2 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition duration-200">
+              Garanta sua vaga antes que acabe!
+            </button>
+          </Link>
         </div>
 
         <h2 className="text-3xl font-bold text-center mb-4">
@@ -105,7 +112,10 @@ export const AboutClasses: React.FC = () => {
                 </li>
               </ul>
 
-              <button className="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+              <button
+                onClick={() => router.push(`/matricula?plano=mensal`)}
+                className="inline-flex items-center justify-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+              >
                 Escolher Pacote
               </button>
             </div>
@@ -129,7 +139,10 @@ export const AboutClasses: React.FC = () => {
                 </li>
               </ul>
 
-              <button className="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 mt-auto ">
+              <button
+                onClick={() => router.push(`/matricula?plano=dupla`)}
+                className="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 mt-auto "
+              >
                 Escolher Pacote
               </button>
             </div>
@@ -153,7 +166,10 @@ export const AboutClasses: React.FC = () => {
                 </li>
               </ul>
 
-              <button className="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300">
+              <button
+                onClick={() => router.push(`/matricula?plano=trimestral`)}
+                className="inline-flex justify-center items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300"
+              >
                 Escolher Pacote
               </button>
             </div>
