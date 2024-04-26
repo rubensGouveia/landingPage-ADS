@@ -6,8 +6,25 @@ export const Footer: React.FC = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-xl font-bold mb-4">Estúdio Acima do Solado</h3>
+            <p className="text-gray-400 mb-2">
+              <span className="text-sm font-bold">Unidade Espaço Cultural</span>
+              <br />
+              <a
+                href="https://maps.app.goo.gl/zCz5UkzRV3jukaAv5"
+                className="text-blue-400 hover:text-blue-300 transition duration-300"
+              >
+                R. Abdias Gomes de Almeida, 800 - Tambauzinho
+              </a>
+            </p>
             <p className="text-gray-400">
-              Rua Izidro Gomes 361, Tambaú sala 03
+              <span className="text-sm font-bold">Unidade VIP </span>
+              <br />
+              <a
+                href="https://maps.app.goo.gl/3nXCqaMQHp2jXXBc9"
+                className="text-blue-400 hover:text-blue-300 transition duration-300"
+              >
+                Rua Izidro Gomes 361, Tambaú sala 03
+              </a>
             </p>
           </div>
           <div className="w-full md:w-1/3 mb-6 md:mb-0">

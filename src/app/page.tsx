@@ -8,9 +8,10 @@ export default function Home() {
   return (
     <main>
       <HeroSection />
+      <AboutStudio />
       <AboutClasses />
       {/* <Testimonials /> */}
-      <AboutStudio />
+
       <Footer />
     </main>
     // <main className="flex min-h-screen flex-col items-center justify-center p-24">
